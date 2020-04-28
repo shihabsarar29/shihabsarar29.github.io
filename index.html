@@ -1,5 +1,341 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    Hello World
-  </body>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<script> 
+
+$(document).ready(function(){
+  $("#select").click(function(){
+    $("#month").slideToggle("slow");
+	$("#Jan").slideUp("slow");
+	$("#Feb").slideUp("slow");
+	$("#Mar").slideUp("slow");
+	$("#Apr").slideUp("slow");
+	$("#May").slideUp("slow");
+	$("#Jun").slideUp("slow");
+	$("#Jul").slideUp("slow");
+	$("#Aug").slideUp("slow");
+	$("#Sep").slideUp("slow");
+	$("#Oct").slideUp("slow");
+	$("#Nov").slideUp("slow");
+	$("#Dec").slideUp("slow");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#month").click(function(){
+    $("#month").slideUp("slow");
+  });
+});
+
+
+
+
+$(document).ready(function(){
+  $("#M1").click(function(){
+    $("#Jan").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#M2").click(function(){
+    $("#Feb").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#M3").click(function(){
+    $("#Mar").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#M4").click(function(){
+    $("#Apr").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#M5").click(function(){
+    $("#May").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#M6").click(function(){
+    $("#Jun").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#M7").click(function(){
+    $("#Jul").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#M8").click(function(){
+    $("#Aug").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#M9").click(function(){
+    $("#Sep").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#M10").click(function(){
+    $("#Oct").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#M11").click(function(){
+    $("#Nov").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#M12").click(function(){
+    $("#Dec").slideDown("slow");
+  });
+});
+
+
+
+</script>
+
+
+
+<style> 
+
+body {
+  font-family:Arial;
+  font-weight:bold;
+  width: 100%;
+  height: 100%;
+  background: url('cover4.jpg') no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+#select {
+  padding:10px;
+}
+
+#month, #select {
+  background-color: rgba(0, 0, 0, 0.5);
+  color:white;
+  text-transform:Uppercase;
+  text-align:center;
+}
+
+#select {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#select:hover{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#month {
+  display: none;
+}
+
+#month ul {
+  list-style:none;
+  text-align:center;
+  padding:0;
+}
+
+#month ul li{
+  padding:10px;
+  margin:none;
+}
+
+#month ul li:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+#Jan, #Feb, #Mar, #Apr, #May, #Jun, #Jul, #Aug, #Sep, #Oct, #Nov, #Dec {
+  display: none;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color:white;
+}
+
+.EventDate {
+	font-size:2em;
+	text-transform:Uppercase;
+}
+.EventName {
+	font-size:1.5em;
+	text-transform:Uppercase;
+}
+.EventDetails {
+	font-size:1em;
+	font-weight:normal;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+body {
+  background: url('cover45.jpg') no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+#profile {
+ width:100%;
+}
+}
+
+@media only screen and (min-width: 601px){
+
+#lefthalf {
+	position:fixed;
+}
+
+#righthalf {
+	float:right;
+}
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+	<div class="container">
+	
+		<div class="row">
+		
+			<div id="lefthalf" class="col-md-6 col-sm-12 col-xs-12">
+				
+				<br><br><br>
+			
+				<img id="profile" src="profile.png" width="70%"/>
+			
+			</div>
+			
+			<div id="righthalf" class="col-md-6 col-sm-12 col-xs-12">
+				
+				<br><br><br>
+				<div>
+				
+					<div id="select">Select Month</div>
+					<div id="month">
+						<ul>
+							<li id="M1">January</li>
+							<li id="M2">February</li>
+							<li id="M3">March</li>
+							<li id="M4">April</li>
+							<li id="M5">May</li>
+							<li id="M6">June</li>
+							<li id="M7">July</li>
+							<li id="M8">August</li>
+							<li id="M9">September</li>
+							<li id="M10">October</li>
+							<li id="M11">November</li>
+							<li id="M12">December</li>
+						</ul>
+					</div>
+					<br>
+
+					<div id="events">
+						<div id="Jan">
+							Birthday
+						</div>
+						<div id="Feb">
+							Deathday
+						</div>
+						<div id="Mar">
+							Birthday
+						</div>
+						<div id="Apr">
+							Deathday
+						</div>
+						<div id="May">
+							Birthday
+						</div>
+						<div id="Jun">
+							Deathday
+						</div>
+						<div id="Jul">
+							Birthday
+						</div>
+						<div id="Aug">
+							Deathday
+						</div>
+						<div id="Sep">
+							Birthday
+						</div>
+						<div id="Oct">
+							Deathday
+						</div>
+						<div id="Nov">
+							<span class="EventDate">29 November 2002</span><br>
+							<span class="EventName">My Birthday</span><br>
+							<span class="EventDetails">The day that I wait for every year is my Birthday. This is the day from when my journey begins.</span>
+							<hr style="border:1px solid white">
+							
+							<span class="EventDate">29 November 2002</span><br>
+							<span class="EventName">My Birthday</span><br>
+							<span class="EventDetails">The day that I wait for every year is my Birthday. This is the day from when my journey begins.</span>
+							<hr style="border:1px solid white">
+							
+							<span class="EventDate">29 November 2002</span><br>
+							<span class="EventName">My Birthday</span><br>
+							<span class="EventDetails">The day that I wait for every year is my Birthday. This is the day from when my journey begins.</span>
+							<hr style="border:1px solid white">
+							
+							<span class="EventDate">29 November 2002</span><br>
+							<span class="EventName">My Birthday</span><br>
+							<span class="EventDetails">The day that I wait for every year is my Birthday. This is the day from when my journey begins.</span>
+							<hr style="border:1px solid white">
+							
+							<span class="EventDate">29 November 2002</span><br>
+							<span class="EventName">My Birthday</span><br>
+							<span class="EventDetails">The day that I wait for every year is my Birthday. This is the day from when my journey begins.</span>
+							<hr style="border:1px solid white">
+							
+							<span class="EventDate">29 November 2002</span><br>
+							<span class="EventName">My Birthday</span><br>
+							<span class="EventDetails">The day that I wait for every year is my Birthday. This is the day from when my journey begins.</span>
+							<hr style="border:1px solid white">
+							
+							<span class="EventDate">29 November 2002</span><br>
+							<span class="EventName">My Birthday</span><br>
+							<span class="EventDetails">The day that I wait for every year is my Birthday. This is the day from when my journey begins.</span>
+							<hr style="border:1px solid white">
+							
+							<span class="EventDate">29 November 2002</span><br>
+							<span class="EventName">My Birthday</span><br>
+							<span class="EventDetails">The day that I wait for every year is my Birthday. This is the day from when my journey begins.</span>
+							<hr style="border:1px solid white">
+							
+							<span class="EventDate">29 November 2002</span><br>
+							<span class="EventName">My Birthday</span><br>
+							<span class="EventDetails">The day that I wait for every year is my Birthday. This is the day from when my journey begins.</span>
+							<br>
+						</div>
+						<div id="Dec">
+							Deathday
+						</div>
+					</div>
+					<br><br>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+</body>
 </html>
